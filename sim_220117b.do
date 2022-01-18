@@ -1,4 +1,6 @@
 
+* This is a Stata do file (compatible with Stata 17.0) that implements the simulation in the main paper from scratch.
+
 ********************
 ********************
 * Preliminaries
@@ -13,9 +15,9 @@
 
 // Log file
 	cap log close
-	cap log using sim_210629, replace
+	cap log using sim_log, replace
 
-// Libraries
+// Libraries // replace with your local libraries
 	local datalib "/afs/crc.nd.edu/user/a/amalani/PAR"
 	local homelib "/afs/crc.nd.edu/user/a/amalani/PAR"
 	local parlib "/afs/crc.nd.edu/user/a/amalani/PAR"
